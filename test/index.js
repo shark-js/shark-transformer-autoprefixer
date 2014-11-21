@@ -58,7 +58,7 @@ describe('Initialization', function() {
 		this.tree = Tree(this.files, this.logger);
 	});
 
-	it('should output nothing', function *() {
+	it('should autoprefix content and output valid result', function *() {
 		var tree = yield TransformerAutoprefixer.treeToTree(this.tree, this.logger);
 
 		expect(tree.getSrcCollectionByDest(this.dest1).getFileByIndex(0).getContent())
