@@ -1,0 +1,5 @@
+.layout {
+	transition: 300ms width;
+	width: 200px;
+	box-sizing: border-box;
+}

@@ -1,0 +1,9 @@
+.layout {
+	-webkit-transition: 300ms width;
+	     -o-transition: 300ms width;
+	        transition: 300ms width;
+	width: 200px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
