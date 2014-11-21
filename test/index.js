@@ -9,6 +9,7 @@ const Tree      = require('shark-tree');
 const Logger    = require('shark-logger');
 const cofse     = require('co-fs-extra');
 const path      = require('path');
+const sprintf   = require('extsprintf').sprintf;
 
 describe('Initialization', function() {
 	before(function *() {
@@ -55,11 +56,17 @@ describe('Initialization', function() {
 			}
 		};
 
-		this.tree = Tree(this.files, this.logger);
+		this.tree = yield Tree(this.files, this.logger);
 	});
 
 	it('should autoprefix content and output valid result', function *() {
-		var tree = yield TransformerAutoprefixer.treeToTree(this.tree, this.logger);
+		try {
+			var tree = yield TransformerAutoprefixer.treeToTree(this.tree, this.logger);
+
+		}
+		catch (error) {
+			console.error(sprintf('%r', error));
+		}
 
 		expect(tree.getSrcCollectionByDest(this.dest1).getFileByIndex(0).getContent())
 			.equal(this.expectDestContent1);
