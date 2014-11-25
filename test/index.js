@@ -21,7 +21,7 @@ describe('Initialization', function() {
 			'Android 2.3',
 			'Android >= 4',
 			'Chrome >= 20',
-			'Firefox >= 24', // Firefox 24 is the latest ESR
+			'Firefox >= 24',
 			'iOS >= 6',
 			'Opera >= 12',
 			'Safari >= 6'
@@ -45,14 +45,18 @@ describe('Initialization', function() {
 		this.files[this.dest1] = {
 			files: [this.src1, this.src2],
 			options: {
-				browsers: this.browsers
+				autoprefixer: {
+					browsers: this.browsers
+				}
 			}
 		};
 
 		this.files[this.dest2] = {
 			files: [this.src2],
 			options: {
-				browsers: this.browsers
+				autoprefixer: {
+					browsers: this.browsers
+				}
 			}
 		};
 
