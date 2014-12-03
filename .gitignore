@@ -29,3 +29,5 @@ node_modules
 
 ./test/fixtures/test-1.dest.css
 ./test/fixtures/test-2.dest.css
+
+.idea
