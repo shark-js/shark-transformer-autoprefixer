@@ -1,6 +1,6 @@
 {
   "name": "shark-transformer-autoprefixer",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "shark-transformer-autoprefixer",
   "main": "lib/transformer-autoprefixer.js",
   "scripts": {
