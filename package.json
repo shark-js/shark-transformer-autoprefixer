@@ -1,7 +1,7 @@
 {
   "name": "shark-transformer-autoprefixer",
   "version": "0.0.2",
-  "description": "shark-transformer-autoprefixer ==============================",
+  "description": "shark-transformer-autoprefixer",
   "main": "lib/transformer-autoprefixer.js",
   "scripts": {
     "test": "node_modules/.bin/mocha --harmony ./test"
@@ -17,24 +17,30 @@
   },
   "homepage": "https://github.com/shark-js/shark-transformer-autoprefixer",
   "engines": {
-    "node": ">=0.11.14 <0.12",
+    "node": ">=0.11.14",
     "npm": ">=2.1.5"
   },
   "engineStrict": true,
   "devDependencies": {
     "chai": "^1.9.2",
-    "co-fs-extra": "git://github.com/shark-js/co-fs-extra",
+    "co-fs-extra": "^1.0.1",
     "co-mocha": "^1.1.0",
     "extsprintf": "^1.2.1",
     "mocha": "^2.0.1",
-    "shark-logger": "git://github.com/shark-js/shark-logger",
-    "shark-tree": "git://github.com/shark-js/shark-tree"
+    "shark-logger": "0.1.0",
+    "shark-tree": "0.1.0"
   },
   "dependencies": {
     "autoprefixer-core": "^3.1.2",
     "co": "^4.0.0",
     "node.extend": "^1.1.3",
-    "shark-transformer": "*",
+    "shark-transformer": "0.1.0",
     "verror": "^1.6.0"
-  }
+  },
+  "files": [
+    "lib",
+    "test",
+    "LICENCE",
+    "README.md"
+  ]
 }
